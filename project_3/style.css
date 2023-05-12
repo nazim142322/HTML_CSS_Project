@@ -1,0 +1,108 @@
+html,body{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight: 300;
+    line-height:1.8em;
+    color:#666;
+}
+.pimg1{
+    min-height:100vh;
+    background-image: url(images/image1.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+    background-attachment: fixed;
+    position:relative;
+}
+.ptext{
+    /* border:2px solid red; */
+    position:absolute;
+    width:100%;
+    top:50%;  
+    text-align:center;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform: uppercase;
+    color:white;
+    /* overflow:hidden; */
+}
+.textbg{
+    background-color:#313534;
+    padding:20px;
+    font-weight:300;
+    opacity:.8;    
+}
+.lightSection{
+    background:#f4f4f4;
+    color:#666;
+    padding: 50px 80px;
+    text-align:center;
+}
+.pimg2{
+    min-height:400px;
+    background-image:url(images/image2.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+    background-attachment: fixed;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+.ptext2 h2{
+    /* border:1px solid blue; */
+    background-color:#313534;
+    padding:20px;
+    text-transform: uppercase;
+    color:white;
+    opacity: .8;
+    letter-spacing:8px;
+    font-weight:300;
+}
+.darkSection{
+    background:#282e34;
+    color:#ddd;
+    padding: 50px 80px;
+    text-align:center;
+}
+.pimg3{
+    min-height:400px;
+    background-image:url(images/image3.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+    background-attachment: fixed;
+    display:grid;
+    place-items: center;
+}
+.ptext3 h2{    
+    background-color:#313534;
+    padding:20px;
+    text-transform: uppercase;
+    color:white;
+    opacity: .8;
+    letter-spacing:8px;
+    font-weight:300;
+}
+.pimg4{
+    min-height:100%;
+    background-image: url(images/image1.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+    background-attachment: fixed;
+    display:grid;
+    place-items:center;    
+}
+.pimg4 h2{
+    background-color:#313534;
+    padding:20px;
+    text-transform: uppercase;
+    color:white;
+    letter-spacing:8px;
+    opacity: .8;
+    font-weight:300;
+}

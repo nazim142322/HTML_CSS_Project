@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+  --purple600:#1b0058;
+  --purple500:#281154;
+  --purple300:#270082;
+  --re600: #dc0000;
+  --body:#f9f6ff;
+  --max-width:1200px;  
+}
+*{
+  /* border:1px solid green; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  font-family: 'Roboto', sans-serif; 
+  scroll-behavior: smooth;  
+ }
+ body::-webkit-scrollbar {
+  display: none;
+}
+ section{
+  scroll-margin:50px;
+ }
+ .giftCard{
+  scroll-margin:100px;
+ }
+header{
+  background-color: var(--purple300);
+  padding: 15px 0;
+  position:sticky;
+  top:0;
+  box-shadow:2px 5px 5px rgba(1, 1, 1, 0.5);
+  z-index:50;  
+}
+.container{
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 5px;
+}
+nav{
+  display:flex; 
+  justify-content: space-between;   
+  align-items:center; 
+}
+.logo{
+  color:white;
+  font-size:25px;
+  font-weight:600;
+}
+.navigation ul{
+  list-style:none;
+  display:flex;
+  gap:20px; 
+}
+.navigation ul li{
+  font-weight: 300;
+}
+.navigation ul a{
+  text-decoration:none;
+  color:white;
+  transition: 0.4s ease-in;
+  padding-bottom:4px;
+  border-bottom:2px solid transparent
+}
+/* .navigation ul a:hover{
+  text-decoration:underline 2px white;
+  text-underline-offset: 4.5px;
+  transition:.08s ease-in;
+} */
+.navigation ul a:hover{
+   /* padding-bottom: 4px; */
+   border-bottom:2px solid white;
+   transition: 0.4s ease-in;
+}
+.heroSection{  
+  min-height:100vh;
+  background-image: url(images/hero_image.png);
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:cover;  
+  display:grid;
+  place-items:center;    
+  color:white;  
+  }
+.heroSection .container{
+  display:grid;
+  place-items:center;  
+  gap:20px;
+}
+.heroSection .container h1{
+  font-size:96px;
+}
+.heroSection .container h3{
+   font-size:32px;
+   letter-spacing: 4px;
+   text-align:center;
+  }
+  .heroSection .container p{
+   font-size:20px;
+    text-align:center;
+    letter-spacing: 1px;;
+  }
+  .musicSection{ 
+    padding:100px 0;
+    background-color:var(--purple500);
+   }
+  .musicSection .container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:white;
+    gap:35px;    
+  }
+  .musicSection .container h1{
+    font-size:32px;
+  }
+  .musicSection .container h4{
+    font-size:22px;
+  }
+  .musicSection .container p{
+    line-height:1.7;
+    text-align:center;
+  }
+  .musicSection .container button{
+    padding: 10px 15px;
+    background-color: var(--re600);
+    border:none;
+    font-size:15px;
+    font-weight:500;
+    color:white;   
+    box-shadow: 5px 5px 5px rgbs(1, 1, 1, 0.5);
+    transition:0.2s ease-in-out
+  }
+  .musicSection .container button:hover{
+    transform:scale(1.02);
+    transition:0.2s ease-in-out;
+    cursor:pointer
+  }
+  .musicSection .app{
+    font-size:12px;
+    font-weight:200;
+  }
+  .musicSection .ipad_iphone_img{
+    margin-top:-400px; 
+    position:relative;
+    top:400px;
+    text-align:center;     
+  }
+  .musicSection .ipad_iphone_img img{
+    width:100%;
+    /* height:auto; */
+  }
+  .aboutMusic{
+    margin-top:400px;    
+  }
+  .aboutMusic .container{  
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:50px;    
+  }
+  .aboutMusic .container p, h3{
+    text-align:center;
+    line-height:1.7;
+  }
+  .aboutMusic .container button{
+    padding:10px 15px;
+    border:none;
+    background-color: var(--purple300);
+    color:white;
+    font-size:15px;
+    transition:0.2s ease-in-out;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.5);
+  }
+  .aboutMusic .container button:hover{
+    transform:scale(1.02);
+    transition:0.2s ease-in-out;
+    opacity:0.9;
+  }
+  .aboutMusic .imac_img img{
+    width:100%;
+  }
+  .videoSection{
+    background-image: url(images/video.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    min-height:800px;
+    display: grid;
+    place-items: center;     
+  }
+  .videoSection .container{
+    margin-top:-100px;
+  }
+  .videoSection .container h2{
+    color:white;
+    margin-bottom:20px;
+    text-align:center;
+    font-weight:400;
+    line-height:1.7
+  }
+  .videoSection .container p{
+    line-height:1.7;
+    color:white;
+    text-align:center;
+  }
+  .giftCard {
+    margin-block:100px;
+    /* display:flex;
+    gap:50px; */
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:20px;
+    place-items:center;
+  }
+  .giftCard .cardContent{
+     /* display:flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content:center;
+    gap: 20px; */
+    display:grid;    
+    justify-items:start;
+    align-content:center; 
+    gap:20px;    
+  }
+  .giftCard .cardImage img{
+    width:90%;
+    height:auto;
+  }
+  .giftCard .cardImage{
+    text-align:center;
+  }
+  .giftCard .cardContent .devider{
+    border:1px solid #ccc;
+    width:100%;
+  }
+  .giftCard .cardContent p{
+    line-height: 1.7;
+    font-size:16px;
+    font-weight: 300;
+  }
+  .giftCard .cardContent h4{
+    line-height: 1.5;
+    font-weight: 300;
+    }
+  .giftCard .cardContent button{  padding:10px 15px;
+  border:none;
+  background-color: var(--purple300);
+  color:white;
+  font-size:15px;
+  transition:0.2s ease-in-out;
+  box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.5);
+}
+.giftCard .cardContent button:hover{
+  transform:scale(1.02);
+  transition:0.2s ease-in-out;
+  opacity:0.9;
+}
+footer{  
+  background-color:var(--purple600);  
+}
+footer .upperFooter{
+  display:flex;
+  justify-content:space-between;
+  color:white;
+  padding:30px 10px;  
+}
+.footerLinks h4{
+  margin-bottom: 10px;
+  border-bottom:2px solid white;
+  padding-bottom:10px;
+}
+.footerLinks ul{
+  list-style:none;
+  font-weight:300;
+  line-height: 1.5;
+}
+footer .lowerFooter{
+  padding:10px 0;
+  background-color: var(--purple300);
+  padding:20px 0;
+}
+footer .lowerFooter p{
+  text-align:center;
+  color:white;
+  font-weight:300;
+}
+  @media(max-width:786px){
+    .container{
+      padding:0 15px;
+  }
+    .logo{
+      font-size:20px;
+  }
+    .navigation ul{      
+      gap:10px; 
+  }
+    .heroSection .container{     
+      gap:20px;  
+  }
+    .heroSection .container h1{
+      font-size:90px;      
+  }
+    .heroSection .container h3{
+      font-size:30px;
+      letter-spacing: 2px;
+  }
+    .heroSection .container p{
+      font-size:16px;        
+      letter-spacing: 1px;
+  } 
+  /* .musicSection{
+    height:100vh; */
+  
+  .videoSection{
+    min-height:600px;
+  }
+  .giftCard {
+    margin-block:50px;
+    margin-bottom:-20   
+  }  
+  footer .upperFooter{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:25px;
+  }  
+  }
