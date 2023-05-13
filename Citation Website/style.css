@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    line-height:1.5;
+}
+.main_border{   
+    max-width:850px;
+    border:10px solid goldenrod;
+    margin:20px auto;    
+}
+.inner_border{
+    border:5px solid goldenrod;
+    margin:8px;
+}
+.container{
+    max-width: 700px;
+    /* border:1px solid red; */
+    margin:auto;
+    position:relative;
+    height:900px;        
+}
+.logo{
+    position: absolute;
+    top:100px;
+    left: 40px;    
+}
+.frame{
+    border:10px solid #901C26;
+    border-top-right-radius: 50px;
+    width:330px;
+    height:678px;
+    position:absolute;
+    top:100px;
+    right:0px;     
+}
+.image_container{
+     position:absolute;    
+     top:150px;
+     right:50px;    
+}
+.image_container img{
+   width:330px;
+   height:678px;
+}
+.text_content{
+   background-color:#901C26;
+   color:white;
+   padding:40px 30px; 
+   width:350px;
+   border-top-right-radius: 50px;
+   border-bottom-left-radius: 50px;
+   text-align: justify;
+   position:absolute;
+   top:350px;
+   right:350px; 
+}
+.text_content h1{
+    text-align:center;
+    padding:10px;
+}
+.session{
+    /* border:1px solid green; */
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding: 50px 0;
+}
+footer{
+    display:flex;
+    justify-content: space-around;    
+    margin-bottom:100px;
+}
+@media(max-width:786px){
+    .main_border{
+        margin:10px;
+    }
+    .logo{
+        text-align:center;
+        width:100%;        
+        top:20px;
+        left: 0px; 
+    }
+    .logo img{
+        width:50%;
+    }
+    .frame{
+        display:none;
+    }
+    .image_container{
+       text-align:center;
+       width:100%;
+       top:205px;
+       right:0px;            
+   }
+   .image_container img{
+    border:10px solid #901C26;
+    border-top-left-radius: 50px;
+   }
+    .text_content{
+        border-left:15px solid white;  
+        border-right:15px solid white;      
+        top:600px;
+        right:0px; 
+        width:100%;        
+     }    
+     .session{
+        margin-top:200px;
+        padding: 0;
+     }
+     footer{
+        margin:20px 0;
+}
