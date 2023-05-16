@@ -138,9 +138,17 @@ main{
     display:flex;
     border:1px solid #ccc;
     align-items: center;
+    justify-content: center;
     box-shadow:0px 5px 4px rgba(221, 221,221,0.6);
     border-radius:5px;
-    margin:2rem 0;
+    margin:2rem 0;    
+ }
+ .cardImage{
+    border:1px solid #ccc !important;
+    border:1px solid green;
+    display:flex;
+    align-items:center;
+    
  }
  .long-card .cardImage img{
     min-width:100%;    
@@ -168,14 +176,17 @@ footer .social_link i:hover{
 .banner{
     display:flex;
     flex-direction:column;
-    /* border:1px solid red;  */
+    /* border:1px solid red;*/
     gap:.5rem; 
+    margin-block:.8rem;    
 }
 .banner h1{ 
     font-size:3rem;
 }
 .banner_image{
-    border:1px solid green; 
+    /* border:1px solid green;  */
+    display:grid;
+    place-items:center;
 }
 .banner_image img{
     width:100%;
