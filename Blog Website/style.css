@@ -145,9 +145,8 @@ main{
     margin:2rem 0;    
  }
  .cardImage{    
-    border:1px solid #ccc;  
     display:flex;
-    align-items:center;       
+    align-items:center;
 }
  .long-card .cardImage img{
     min-width:100%;    
